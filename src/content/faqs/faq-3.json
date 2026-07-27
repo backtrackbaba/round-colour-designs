@@ -1,0 +1,8 @@
+{
+  "question": "Do you take up renovation projects?",
+  "answer": "Yes. Renovation scopes can include civil work, kitchens, storage, ceilings, electrical planning, finishes and furniture.",
+  "order": 3,
+  "pages": [
+    "services"
+  ]
+}

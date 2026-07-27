@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import ProjectCard from '../../../components/ProjectCard.astro';
+import { breadcrumbSchema } from '../../../config/schema';
+
+const slugify = (value: string) => value.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  const categories = [...new Set(projects.map((project) => project.data.category))];
+  return categories.map((category) => ({
+    params: { category: slugify(category) },
+    props: { category, projects: projects.filter((project) => project.data.category === category) },
+  }));
+}
+
+const { category, projects } = Astro.props;
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Projects', href: '/projects/' },
+  { label: category, href: `/projects/category/${slugify(category)}/` },
+];
+---
+<BaseLayout
+  title={`${category} Interior Design Projects`}
+  description={`Explore ${category.toLowerCase()} interior design case studies from Round Colour Designs.`}
+  jsonLd={[breadcrumbSchema(crumbs)]}
+>
+  <PageHero
+    eyebrow="Project category"
+    title={`${category} interiors.`}
+    intro="Representative case studies showing the presentation planned for the final verified project portfolio."
+  />
+  <section class="section">
+    <div class="container project-grid">
+      {projects.map((project) => (
+        <ProjectCard slug={project.id} {...project.data} image={project.data.cover.src} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

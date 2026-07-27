@@ -1,0 +1,5 @@
+---
+interface Props{name:string;title:string;experience:string;image:string}
+const {name,title,experience,image}=Astro.props;
+---
+<article class="founder-card"><img src={image} alt={`Stock portrait representing ${name}; temporary pose reference`} loading="lazy"/><p class="eyebrow">{title}</p><h3 class="type-card-title">{name}</h3><p>{experience}</p><small>Temporary stock-photo pose reference</small></article>

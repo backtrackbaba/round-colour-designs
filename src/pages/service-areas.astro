@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'; import PageHero from '../components/PageHero.astro'; import {site} from '../config/site';
+---
+<BaseLayout title="Interior Design Service Areas" description="Round Colour Designs serves Mulund, nearby Mumbai localities, MMR and selected projects across Maharashtra."><PageHero eyebrow="Where we work" title="Based in Mulund. Working across MMR and Maharashtra." intro="Local consultations are centred around Mulund and nearby areas, with selected projects undertaken across the wider region."/><section class="section"><div class="container area-grid">{site.serviceAreas.map(x=><article><h2 class="type-card-title">{x}</h2><p>Interior consultation, planning and execution are available subject to project scope and site feasibility.</p></article>)}</div></section></BaseLayout>

@@ -1,0 +1,10 @@
+{
+  "question": "How much does an interior design project cost?",
+  "answer": "Every project is quoted after consultation because size, scope, materials, custom furniture and execution requirements vary.",
+  "order": 1,
+  "pages": [
+    "home",
+    "services",
+    "contact"
+  ]
+}

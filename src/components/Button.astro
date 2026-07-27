@@ -1,0 +1,6 @@
+---
+import WhatsAppIcon from './WhatsAppIcon.astro';
+interface Props { href:string; variant?:'primary'|'secondary'|'dark'|'whatsapp'; external?:boolean; icon?:'whatsapp'; class?:string }
+const {href,variant='secondary',external=false,icon,class:className=''}=Astro.props;
+---
+<a class:list={['btn',`btn-${variant}`,className]} href={href} target={external?'_blank':undefined} rel={external?'noopener noreferrer':undefined}><slot name="icon" />{icon==='whatsapp'&&<WhatsAppIcon/>}<slot/></a>

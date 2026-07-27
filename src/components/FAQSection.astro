@@ -1,0 +1,5 @@
+---
+interface Item{question:string;answer:string}
+const {items,title='Frequently asked questions'}=Astro.props as {items:Item[],title?:string};
+---
+<section class="section theme-warm"><div class="container faq-layout"><div><p class="eyebrow">Useful answers</p><h2 class="type-section-title">{title}</h2><p>Clear answers before you begin a conversation with the studio.</p></div><div class="faq-list">{items.map((item)=><details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></div></section>

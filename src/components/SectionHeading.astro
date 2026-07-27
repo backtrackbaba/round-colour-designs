@@ -1,0 +1,5 @@
+---
+interface Props{eyebrow?:string;title:string;intro?:string;align?:'left'|'center';size?:'normal'|'large'}
+const {eyebrow,title,intro,align='left',size='normal'}=Astro.props;
+---
+<header class:list={['section-heading',`align-${align}`,size==='large'&&'is-large']}>{eyebrow&&<p class="eyebrow">{eyebrow}</p>}<h2 class="type-section-title">{title}</h2>{intro&&<p class="type-body-lg">{intro}</p>}</header>

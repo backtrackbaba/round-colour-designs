@@ -1,42 +1,34 @@
 # Round Colour Designs
 
-> Round Colour Designs is a founder-led interior design and turnkey execution studio based in Mulund West, Mumbai.
+> Round Colour Designs is a founder-led interior design studio based in Mulund West, Mumbai, serving MMR and selected projects across Maharashtra.
 
-## Core facts
-- Brand: Round Colour Designs
-- Tagline: Shaping Dreams
-- Founded: 2022
-- Founders: Akshay Vanare and Pratibha Vanare
+## Primary information
+- Website: https://www.roundcolourdesigns.com/
 - Phone and WhatsApp: +91 98339 92725
-- Address: 31, Saidham Shopping Plaza, Mulund West, Mumbai, Maharashtra, India
-- Service area: Mulund, nearby areas, Mumbai Metropolitan Region, and selected projects across Maharashtra
-- Consultation: Complimentary introductory consultation; meetings by prior appointment
-- Pricing: Project-specific and provided after consultation; no standard starting price is published
-
-## Founder expertise
-- Akshay Vanare: Co-Founder & Head of Design Execution; Diploma in Interior Designing; 10+ years of industry experience
-- Pratibha Vanare: Co-Founder & Head of Kitchen Design & Client Experience; Diploma in Interior Designing; 5+ years of industry experience
+- Address: 31, Saidham Shopping Plaza, Mulund West, Mumbai, Maharashtra
+- Founders: Akshay Vanare and Pratibha Vanare
+- Established: 2022
+- Tagline: Shaping Dreams
 
 ## Services
 - Residential interior design
 - Commercial and office interiors
-- Restaurant, cafe and hospitality interiors
-- Bungalow and villa interiors
-- Farmhouse interiors
-- Interior consultation and space planning
-- 2D layouts, working drawings and 3D visualisation
+- Restaurant and hospitality interiors
+- Bungalow, villa and farmhouse interiors
+- Space planning, 2D drawings and 3D visualisation
 - Modular kitchens, wardrobes and storage solutions
-- Custom furniture, lighting, ceiling and electrical planning
-- Civil renovation, turnkey execution and site supervision
-- Styling, decor, material selection and project management
-- Architectural and structural coordination through qualified professionals where required
+- Custom furniture and lighting design
+- Renovation, site supervision and turnkey execution
 
-## Website pages
-- [Home](https://www.roundcolourdesigns.com/)
-- [About](https://www.roundcolourdesigns.com/about.html)
-- [Services](https://www.roundcolourdesigns.com/services.html)
-- [Projects](https://www.roundcolourdesigns.com/projects.html)
-- [Contact](https://www.roundcolourdesigns.com/contact.html)
+## Public pages
+- Home: /
+- About: /about/
+- Services: /services/
+- Projects: /projects/
+- Contact: /contact/
+- Service areas: /service-areas/
+- Journal: /journal/
+- Privacy: /privacy/
 
-## Contact intent
-People seeking interior design services should contact the studio by phone or WhatsApp at +91 98339 92725.
+## Important prototype notice
+Project case studies, testimonials and some photographs are placeholders used for internal design review. They must not be treated as verified completed work until replaced before public launch.

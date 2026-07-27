@@ -1,0 +1,5 @@
+---
+interface Props{slug:string;title:string;summary:string;image:string;features:string[]}
+const {slug,title,summary,image,features}=Astro.props;
+---
+<article class="service-card" id={slug}><img src={image} alt="" loading="lazy"/><div><h3 class="type-card-title">{title}</h3><p>{summary}</p><ul>{features.slice(0,3).map(x=><li>{x}</li>)}</ul><a class="text-link" href={`/services/#${slug}`}>Explore service →</a></div></article>

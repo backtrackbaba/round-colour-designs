@@ -1,0 +1,9 @@
+{
+  "question": "Do you work outside Mulund?",
+  "answer": "Yes. The studio works across Mumbai, MMR and selected locations across Maharashtra.",
+  "order": 4,
+  "pages": [
+    "home",
+    "contact"
+  ]
+}

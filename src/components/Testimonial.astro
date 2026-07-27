@@ -1,0 +1,5 @@
+---
+interface Props{quote:string;name:string;project:string;placeholder?:boolean}
+const {quote,name,project,placeholder}=Astro.props;
+---
+<figure class="testimonial"><blockquote class="type-quote">“{quote}”</blockquote><figcaption>{name} · {project}{placeholder&&' · Copy placeholder'}</figcaption></figure>

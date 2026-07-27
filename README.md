@@ -1,7 +1,8 @@
-# Round Colour Designs
-Astro + Tailwind website foundation with reusable design tokens and a temporary public typography switcher.
+# Round Colour Designs — Astro website
 
-## Run
+A static, SEO/AEO-focused portfolio and lead-generation website built with Astro 5 and Tailwind CSS 4.
+
+## Run locally
 ```bash
 npm install
 npm run dev
@@ -11,24 +12,18 @@ npm run dev
 ```bash
 npm run build
 ```
+The generated site is written to `dist/`. Netlify uses the root `netlify.toml`.
 
-Project progress is tracked in `docs/IMPLEMENTATION-TRACKER.md`.
+## Architecture
+- `src/components`: reusable interface and SEO components
+- `src/content`: typed project, service, FAQ, testimonial and journal collections
+- `src/pages`: static pages and generated project case-study routes
+- `src/styles/tokens.css`: brand and typography tokens
+- `src/styles/global.css`: semantic component and layout styles
+- `docs/IMPLEMENTATION-TRACKER.md`: delivery status and remaining launch work
 
-## Deploy to Netlify
+## Typography review
+The visible front-end switcher offers Editorial, Boutique and Modern Studio font pairings. It is intentionally enabled for internal review.
 
-The repository includes a root-level `netlify.toml` configured for this static Astro site.
-
-- Build command: `npm run build`
-- Publish directory: `dist`
-- Node.js: 22
-
-To deploy from Git, import the repository into Netlify and leave the detected settings unchanged. Netlify will read `netlify.toml` automatically.
-
-For a manual deploy, build locally first and upload the generated `dist/` directory:
-
-```bash
-npm install
-npm run build
-```
-
-The canonical production URL remains configured as `https://www.roundcolourdesigns.com` in `astro.config.mjs`, even while previewing through a temporary `netlify.app` URL.
+## Content warning
+Stock founder images, project visuals, project facts and testimonials are temporary placeholders. Replace and verify them before publishing the site publicly.

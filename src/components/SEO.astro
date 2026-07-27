@@ -1,0 +1,6 @@
+---
+import {site} from '../config/site';
+const {title,description,canonical,ogImage='/assets/logo-original.jpeg',type='website',jsonLd=[]}=Astro.props;
+const url=new URL(canonical??Astro.url.pathname,site.url).toString(); const fullTitle=title.includes(site.name)?title:`${title} | ${site.name}`;
+---
+<title>{fullTitle}</title><meta name="description" content={description}/><link rel="canonical" href={url}/><meta property="og:type" content={type}/><meta property="og:title" content={fullTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={url}/><meta property="og:image" content={new URL(ogImage,site.url).toString()}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={fullTitle}/><meta name="twitter:description" content={description}/>{jsonLd.map((schema:any)=><script type="application/ld+json" set:html={JSON.stringify(schema)} />)}

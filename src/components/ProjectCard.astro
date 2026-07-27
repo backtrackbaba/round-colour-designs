@@ -1,0 +1,5 @@
+---
+interface Props{slug:string;title:string;category:string;location:string;summary:string;image:string;placeholder?:boolean}
+const {slug,title,category,location,summary,image,placeholder=false}=Astro.props;
+---
+<article class="project-card"><a href={`/projects/${slug}/`}><div class="media-wrap"><img src={image} alt={`${title} — ${category} interior project placeholder`} loading="lazy" />{placeholder&&<span class="image-note">Visual placeholder</span>}</div><p class="project-meta">{category} · {location}</p><h3 class="type-card-title">{title}</h3><p>{summary}</p><span class="text-link">View case study →</span></a></article>
