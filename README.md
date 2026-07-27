@@ -21,3 +21,7 @@ Then open `http://localhost:8080`.
 5. Add Google Business Profile, Instagram and other verified social links.
 6. Review architecture/structural service wording and maintain qualified-professional coordination language.
 7. Update the privacy policy when analytics or form storage is enabled.
+
+## Prototype photography
+
+The current build uses real interior and architecture photographs from Unsplash to make the visual direction easier to evaluate. These are presentation placeholders and must be replaced with Round Colour Designs' own completed-project photographs before public launch. The original uploaded Round Colour Designs logo artwork is used in the header, footer and favicon.
