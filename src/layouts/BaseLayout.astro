@@ -1,0 +1,5 @@
+---
+import '../styles/global.css'; import Header from '../components/Header.astro'; import Footer from '../components/Footer.astro'; import FontSwitcher from '../components/FontSwitcher.astro'; import WhatsAppIcon from '../components/WhatsAppIcon.astro'; import {site} from '../config/site';
+const {title='Round Colour Designs',description='Interior design studio in Mulund, Mumbai.'}=Astro.props;
+---
+<!doctype html><html lang="en-IN" data-font-theme="editorial"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>{title}</title><meta name="description" content={description}><link rel="icon" href="/assets/logo-full.png"><slot name="head"/></head><body><Header/><main><slot/></main><Footer/><FontSwitcher/><a class="whatsapp" href={site.whatsapp} target="_blank" aria-label="Chat on WhatsApp"><WhatsAppIcon/><span>WhatsApp</span></a></body></html>

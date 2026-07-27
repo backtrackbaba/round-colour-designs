@@ -38,3 +38,13 @@
 .founder-profile p{color:var(--muted)}
 .stock-note{font-size:.82rem;color:#aaa;margin-top:1rem}
 @media(max-width:760px){.founder-card-photo{grid-template-columns:72px 1fr}.founder-card-photo img{width:72px;height:88px}.founder-profile-grid{grid-template-columns:1fr}.founder-profile{grid-template-columns:125px 1fr;min-height:260px}.founder-profile>div{padding:1.15rem}.about-couple-photo img{min-height:330px}}
+
+/* Transparent, larger header logo and consistent WhatsApp iconography */
+.brand-logo{width:210px;height:66px;object-fit:contain;object-position:left center}
+.header .brand-logo{filter:none}
+.wa-link{display:inline-flex!important;align-items:center;gap:.48rem}
+.wa-icon{width:1.18em;height:1.18em;flex:0 0 auto;display:block}
+.whatsapp{display:inline-flex;align-items:center;gap:.5rem}
+.whatsapp .wa-icon{width:1.35rem;height:1.35rem}
+@media(max-width:760px){.brand-logo{width:170px;height:56px}.nav{height:72px}}
+@media(max-width:600px){.whatsapp{width:54px;height:54px;padding:0;display:grid!important;place-items:center;font-size:inherit}.whatsapp span{display:none}.whatsapp:after{content:none}.whatsapp .wa-icon{width:27px;height:27px}}

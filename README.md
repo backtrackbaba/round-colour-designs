@@ -1,27 +1,34 @@
-# Round Colour Designs website starter
+# Round Colour Designs
+Astro + Tailwind website foundation with reusable design tokens and a temporary public typography switcher.
 
-A responsive, static, multi-page website prototype with local SEO, AEO content, structured data, `robots.txt`, `sitemap.xml` and `llms.txt`.
-
-## Preview locally
-
-Run any static server in this directory, for example:
-
+## Run
 ```bash
-python3 -m http.server 8080
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:8080`.
+## Build
+```bash
+npm run build
+```
 
-## Before launch
+Project progress is tracked in `docs/IMPLEMENTATION-TRACKER.md`.
 
-1. Replace placeholder project and founder visuals with genuine photographs.
-2. Replace fictional project names and details with real case studies.
-3. Replace placeholder testimonials with verified client reviews.
-4. Confirm the final domain and replace `https://www.roundcolourdesigns.com` everywhere.
-5. Add Google Business Profile, Instagram and other verified social links.
-6. Review architecture/structural service wording and maintain qualified-professional coordination language.
-7. Update the privacy policy when analytics or form storage is enabled.
+## Deploy to Netlify
 
-## Prototype photography
+The repository includes a root-level `netlify.toml` configured for this static Astro site.
 
-The current build uses real interior and architecture photographs from Unsplash to make the visual direction easier to evaluate. These are presentation placeholders and must be replaced with Round Colour Designs' own completed-project photographs before public launch. The original uploaded Round Colour Designs logo artwork is used in the header, footer and favicon.
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node.js: 22
+
+To deploy from Git, import the repository into Netlify and leave the detected settings unchanged. Netlify will read `netlify.toml` automatically.
+
+For a manual deploy, build locally first and upload the generated `dist/` directory:
+
+```bash
+npm install
+npm run build
+```
+
+The canonical production URL remains configured as `https://www.roundcolourdesigns.com` in `astro.config.mjs`, even while previewing through a temporary `netlify.app` URL.

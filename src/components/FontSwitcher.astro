@@ -1,0 +1,4 @@
+<div class="font-switcher"><label for="font-theme">Typography preview</label><select id="font-theme"><option value="editorial">Editorial</option><option value="boutique">Boutique</option><option value="modern">Modern studio</option></select></div>
+<script is:inline>
+const key='rcd-font-theme';const select=document.querySelector('#font-theme');const saved=localStorage.getItem(key)||'editorial';document.documentElement.dataset.fontTheme=saved;select.value=saved;select.addEventListener('change',()=>{document.documentElement.dataset.fontTheme=select.value;localStorage.setItem(key,select.value)});
+</script>
